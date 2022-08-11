@@ -1,0 +1,22 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "test module",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onopko81/test.git"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "Onofrio Napolitano <onofrio.napolitano@hotmail.it> (https://napolitano.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/onopko81/test/issues"
+  },
+  "homepage": "https://github.com/onopko81/test#readme"
+}
