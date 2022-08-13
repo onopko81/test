@@ -1,4 +1,7 @@
 const path = require('path');
+//const IS_DEVELOPMENT =   (process.env.WEBPACK_SERVE) ? true : false
+
+
 
 const udm = {
     entry: './src/index.ts',
@@ -16,9 +19,8 @@ const udm = {
     },
     output:  {
         path: path.resolve(__dirname, 'dist/umd'),
-        filename: 'bundle.js',
+        filename: 'test.js',
         library: {
-            name: 'test',
             type: 'umd',
         },
     }
@@ -43,7 +45,7 @@ const esm = {
     },
     output: {
         path: path.resolve(__dirname, 'dist/esm'),
-        filename: 'bundle.js',
+        filename: 'test.js',
         library: {
             type: 'module',
         },
@@ -77,4 +79,10 @@ const dev = {
     },
 }
 
-module.exports = [udm, esm, dev]
+//module.exports = (IS_DEVELOPMENT) ? [udm, esm] : dev
+
+module.exports = (env) => {
+    console.log(env)
+    return (env.production) ? [udm, esm] : dev
+
+}

@@ -8,6 +8,6 @@
         "allowJs": true,
         "moduleResolution": "node",
         "strictPropertyInitialization": true,
-        "strictNullChecks": true
-}
+        "strictNullChecks": true,
+    }
 }

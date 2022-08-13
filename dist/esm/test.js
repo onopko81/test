@@ -1,0 +1,1 @@
+var o={d:(e,t)=>{for(var n in t)o.o(t,n)&&!o.o(e,n)&&Object.defineProperty(e,n,{enumerable:!0,get:t[n]})},o:(o,e)=>Object.prototype.hasOwnProperty.call(o,e)},e={};o.d(e,{B:()=>n,M:()=>t});var t=function(o,e){this.name=o,this.cognome=e};function n(o){return"".concat(o.nome," ").concat(o.cognome," cxss")}var r=e.M,a=e.B;export{r as Prova,a as test};

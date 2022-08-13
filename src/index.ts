@@ -5,6 +5,9 @@ export class Prova {
        this.name = nome
        this.cognome = cognome
     }
+   public init ():string {
+        return this.name + this.cognome
+    }
 }
 
 interface Test {
@@ -13,7 +16,8 @@ interface Test {
 }
 
 export function test (p: Test) : string {
-    return `${p.nome} ${p.cognome} cx`;
+    return `${p.nome} ${p.cognome} cxss
+    sss`;
 }
 
 
